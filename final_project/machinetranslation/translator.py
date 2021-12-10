@@ -4,9 +4,8 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 #apikey = os.environ['apikey']
 #url = os.environ['url']
-APIKEY='4vUIIE_2UPzKBibZ97Bo9eU-MJunw-uLdD4qRluUnwHK'
-URL='https://api.us-south.language-translator.watson.cloud.ibm.com'
-authenticator = IAMAuthenticator('4vUIIE_2UPzKBibZ97Bo9eU-MJunw-uLdD4qRluUnwHK')
+
+authenticator = IAMAuthenticator('apikey')
 language_translator = LanguageTranslatorV3(
     version='2018-05-01',
     authenticator=authenticator
